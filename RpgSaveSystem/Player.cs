@@ -1,12 +1,17 @@
+using System.Runtime.CompilerServices;
+
+namespace PlayerObjectSpace;
 public class Player : IGameCharacter, ISaveable
 {
-	public Player(string name, int health, int level)
+    
+	private Player(string name, int health, int level)
 	{
-	}
+        string name { get; private set; }
 
+    
 	public void AddItem(Item item)
 	{
-        
+
 	}
 
 	public void TakeDamage(int amount)
@@ -17,7 +22,9 @@ public class Player : IGameCharacter, ISaveable
             health = 0;
         }
         if (heatlh == 0)
-            Console.WriteLine("You have fainted."); 
+            Console.WriteLine("You have fainted.");
+
+         
 
 	}
 
