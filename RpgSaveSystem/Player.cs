@@ -3,12 +3,16 @@ using System.Runtime.CompilerServices;
 namespace PlayerObjectSpace;
 public class Player : IGameCharacter, ISaveable
 {
-    
+    private int Name { get; set; }
+	private int Health{ get; set; }
+	private int Level;
 	private Player(string name, int health, int level)
 	{
-        string name { get; private set; }
+		this.Name = name;
+		this.Health = health;
+		
 
-    
+	}
 	public void AddItem(Item item)
 	{
 
@@ -39,3 +43,5 @@ public class Player : IGameCharacter, ISaveable
 		return playerinfo;
 	}
 }
+
+

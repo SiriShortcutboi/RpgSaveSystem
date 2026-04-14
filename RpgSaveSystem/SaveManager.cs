@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 public static class SaveManager
 {
 	public static void Save(ISaveable entity)
