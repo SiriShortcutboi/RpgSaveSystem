@@ -10,7 +10,7 @@ public class Player : IGameCharacter, ISaveable
 	{
 		this.Name = name;
 		this.Health = health;
-		
+
 
 	}
 	public void AddItem(Item item)
@@ -34,7 +34,7 @@ public class Player : IGameCharacter, ISaveable
 
 	public void LevelUp()
 	{
-        LevelUp++;
+        Level++;
 	}
 
 	public string ToJson()
